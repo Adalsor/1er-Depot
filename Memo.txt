@@ -1,52 +1,58 @@
-                Memo Git
+                                                      Memo Git
+
 Configurer Git:
-git config --global user.name "Your Name"             Config ton Nom
-git config --global user.email "you@example.com"      Config ton Mail
-git config --list                                     Voir tes config
+
+git config --global user.name "Your Name"                            Config ton Nom
+git config --global user.email "you@example.com"                     Config ton Mail
+git config --list                                                    Voir tes config
 
 Dossier Git:
-mkdir myproject                                       Créer un dossier 
-cd myproject                                    Se déplacer dans les dossiers
-ls                              Voir les dossier/fichier là où on se trouve
+
+mkdir myproject                                                      Créer un dossier 
+cd myproject                                                         Se déplacer dans les dossiers
+ls                                                                   Voir les dossier/fichier là où on se trouve
 
 Tag Git:
-git tag <tagname>                                 Créer une balise légère
-git tag -a <tagname> -m "message"                Créer une balise annotée
-git tag <tagname> <commit-hash>              Marquer un commit spécifique
-git tag                                                 Liste des balises
-git show <tagname>                      Afficher les détails de la balise
-git push origin v1.0            Pousser une seul balise vers le référentiel
-git push --tags                                Pousser toutes les balises
-git tag -d v1.0                             Supprimer une balise localement
-git push origin --delete tag v1.0           Supprimer une balise du référentiel distant
+
+git tag <tagname>                                                    Créer une balise légère
+git tag -a <tagname> -m "message"                                    Créer une balise annotée
+git tag <tagname> <commit-hash>                                      Marquer un commit spécifique
+git tag                                                              Liste des balises
+git show <tagname>                                                   Afficher les détails de la balise
+git push origin v1.0                                                 Pousser une seul balise vers le référentiel
+git push --tags                                                      Pousser toutes les balises
+git tag -d v1.0                                                      Supprimer une balise localement
+git push origin --delete tag v1.0                                    Supprimer une balise du référentiel distant
 
 Commande Git:
-git init                                              Initialiser Git
-git status                               Verifier quel fichiers sont suivis 
-git add <file>                    Inclus le fichier pour le prochain commit
-git add --all                                      Inclus tout les fichiers
-git restore --staged <file>                           Annule le add
-git commit -m "message"                  Point de sauvegarde de vos projets
-git commit -a -m "message"                   Tout sauvegarder (ignorer add)
-git log                                      Voir l'historique des commits
-git log --oneline                            Voir l'historique en une ligne
-git push                                     Partager les modifications
-git commit --amend -m "Corrected message"  Changer le nom du dernier commit
-git show <commit>               Afficher les détails d'un commit spécifique
-git stash                                    Commit temporaire
-git help <command>                           Voir l'aide pour une  commande
-git help --all                    Lister toutes les commandes Git possibles
-git restore <file>                   Annulez les modifications avant le add
-git restore --staged <file>           Annuler la mise en scène d'un fichier
+
+git init                                                             Initialiser Git
+git status                                                           Verifier quel fichiers sont suivis 
+git add <file>                                                       Inclus le fichier pour le prochain commit
+git add --all                                                        Inclus tout les fichiers
+git restore --staged <file>                                          Annule le add
+git commit -m "message"                                              Point de sauvegarde de vos projets
+git commit -a -m "message"                                           Tout sauvegarder (ignorer add)
+git log                                                              Voir l'historique des commits
+git log --oneline                                                    Voir l'historique en une ligne
+git push                                                             Partager les modifications
+git commit --amend -m "Corrected message"                            Changer le nom du dernier commit
+git show <commit>                                                    Afficher les détails d'un commit spécifique
+git stash                                                            Commit temporaire
+git help <command>                                                   Voir l'aide pour une  commande
+git help --all                                                       Lister toutes les commandes Git possibles
+git restore <file>                                                   Annulez les modifications avant le add
+git restore --staged <file>                                          Annuler la mise en scène d'un fichier
 
 Branch Git:
-git branch "nom de la branche"                 Créé une branche
-git checkout "nom de la branche"               Naviguer dans la branche
-git checkout master                            Aller à la branche master
-git branch -d "nom de la branche"              Supprimer la branche
-git branch                                   Lister les branches existantes
-git merge                 Fusionner une branche dans votre branche actuelle
-git merge --abort                              Annuler une fusion en cours
+
+git branch "nom de la branche"                                       Créé une branche
+git checkout "nom de la branche"                                     Naviguer dans la branche
+git checkout master                                                  Aller à la branche master
+git branch -d "nom de la branche"                                    Supprimer la branche
+git branch                                                           Lister les branches existantes
+git merge                                                            Fusionner une branche dans votre branche actuelle
+git merge --abort                                                    Annuler une fusion en cours
 
 
 
