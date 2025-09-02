@@ -37,6 +37,11 @@ git log                                                              Voir l'hist
 git log --oneline                                                    Voir l'historique en une ligne
 git push                                                             Partager les modifications
 git commit --amend -m "Corrected message"                            Changer le nom du dernier commit
+git diff                                                             Voir les différences non validées
+git clone <url du dépôt> [nom du dossier]	                     Cloner un dépôt Git existant
+git fetch origin <nom de la branch>                                  Récupère les fichiers distant
+git pull origin <nom de la branch>                                   Effectue un git fetch + un git merge
+
 git show <commit>                                                    Afficher les détails d'un commit spécifique
 git stash                                                            Commit temporaire
 git help <command>                                                   Voir l'aide pour une  commande
@@ -51,7 +56,7 @@ git checkout "nom de la branche"                                     Naviguer da
 git checkout master                                                  Aller à la branche master
 git branch -d "nom de la branche"                                    Supprimer la branche
 git branch                                                           Lister les branches existantes
-git merge                                                            Fusionner une branche dans votre branche actuelle
+git merge <nom de la branch>                                         Fusionner une branche dans votre branche actuelle
 git merge --abort                                                    Annuler une fusion en cours
 
 
