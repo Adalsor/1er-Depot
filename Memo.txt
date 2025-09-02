@@ -27,7 +27,7 @@ git push origin --delete tag v1.0                                    Supprimer u
 Commande Git:
 
 git init                                                             Initialiser Git
-git status                                                           Verifier quel fichiers sont suivis 
+git status                                                           Verifier quel fichiers sont suivis
 git add <file>                                                       Inclus le fichier pour le prochain commit
 git add --all                                                        Inclus tout les fichiers
 git restore --staged <file>                                          Annule le add
