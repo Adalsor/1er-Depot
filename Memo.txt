@@ -35,7 +35,9 @@ git commit -m "message"                                              Point de sa
 git commit -a -m "message"                                           Tout sauvegarder (ignorer add)
 git log                                                              Voir l'historique des commits
 git log --oneline                                                    Voir l'historique en une ligne
-git push                                                             Partager les modifications
+git push origin                                                      Partager les modifications
+git push --tags                                                      Envoie toutes les balises locales vers GitHub
+git push origin v1.0                                                 Pour pousser une balise spécifique
 git commit --amend -m "Corrected message"                            Changer le nom du dernier commit
 git diff                                                             Voir les différences non validées
 git clone <url du dépôt> [nom du dossier]	                     Cloner un dépôt Git existant
@@ -56,15 +58,20 @@ git checkout "nom de la branche"                                     Naviguer da
 git checkout master                                                  Aller à la branche master
 git branch -d "nom de la branche"                                    Supprimer la branche
 git branch                                                           Lister les branches existantes
-git merge <nom de la branch>                                         Fusionner une branche dans votre branche actuelle
+git merge <nom de la branch>                                         Fusionner une branche dans branche actuelle
 git merge --abort                                                    Annuler une fusion en cours
 
+SSH:
 
-
-
-
-
-
+eval $(ssh-agent -s)                                                 Si on a jamais utilisé de clé sur notre ordi
+ssh-keygen -t rsa -b 4096 -C "your@email.com"                        Générer clé SSH (dans id_rsa)
+ssh-add ~/.ssh/id_rsa                                                Ajouter la clé à votre Git
+clip < ~/.ssh/id_rsa.pub                                             Copier la clé publique (dans id_rsa.pub)
+ssh-add -l                                                           Lister les clés charghé
+ssh-add -d ~/.ssh/id_rsa                                             Supprime la clé
+ssh -T git@github.com                                                Verifier votre connexion SSH à GitHub 
+git remote add origin git@github.com:your-username/your-repo.git     Ajouter l'origine distante
+git remote set-url origin git@github.com:your-username/your-repo.git Mettre à jour
 
 
 
