@@ -60,6 +60,9 @@ git merge <nom de la branch>                                         Fusionner u
 git merge --abort                                                    Annuler une fusion en cours
 
 
+git push -u origin main
+git branch -M main
+
 
 
 
