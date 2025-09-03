@@ -72,8 +72,7 @@ ssh-add -d ~/.ssh/id_rsa                                             Supprime la
 ssh -T git@github.com                                                Verifier votre connexion SSH à GitHub 
 git remote add origin git@github.com:your-username/your-repo.git     Ajouter l'origine distante
 git remote set-url origin git@github.com:your-username/your-repo.git Mettre à jour
-
-git push -u origin main
-git branch -M main
+git push -u origin main                                              push en passant sa branch en upstream
+git branch -M "nom de la branche"                                    Renommer une branche
 
 
