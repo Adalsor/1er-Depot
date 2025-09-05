@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il était une image...</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.0">
+</head>
+<body>
+
+    <div>
+        <h1>Il était une image...</h1>
+    </div>
+
+    <div class="galerie">
+        <a href="{{ url_for('page1') }}" class="histoire">
+            <h2>La Belle au bois dormant</h2>
+            <img src="{{ url_for('static', filename='Image/La belle aux bois dormant.jpg') }}" alt="La belle aux bois dormant">
+            <p>Une princesse tombe dans un sommeil mystérieux après une étrange malédiction. Saurez-vous découvrir comment son destin sera changé ?</p>
+        </a>
+
+        <a href="{{url_for('page2')}}" class="histoire">
+            <h3>La Belle et la Bête</h3>
+            <img src="{{ url_for('static', filename='Image/La belle et la bete.jpg') }}" alt="La Belle et la Bête">
+            <p>Une jeune femme se retrouve dans le château d’une créature étrange. Son courage et son cœur seront mis à l’épreuve par des secrets surprenants…</p>
+        </a>
+
+        <a href="{{url_for('page3')}}" class="histoire">
+            <h4>Les trois petits cochons</h4>
+            <img src="{{ url_for('static', filename='Image/Les trois petits cochons.jpg') }}" alt="Les trois petits cochons">
+            <p>Trois petits cochons quittent la maison de leur mère pour construire leur maison. Mais un mystérieux loup rôde dans les parages…</p>
+        </a>
+
+        <a href="{{url_for('page4')}}" class="histoire">
+            <h5>Blanche-Neige et les sept nains</h5>
+            <img src="{{ url_for('static', filename='Image/Blanche neige.jpg') }}" alt="Blanche-Neige">
+            <p>Une jeune princesse est menacée par une reine jalouse et doit se cacher. Sa rencontre avec sept habitants inattendus bouleverse sa vie…</p>
+        </a>
+
+        <a href="{{url_for('page5')}}" class="histoire">
+            <h6>Le Petit Prince</h6>
+            <img src="{{ url_for('static', filename='Image/Le petit prince.jpg') }}" alt="Le Petit Prince">
+            <p>Un petit garçon venu d’une autre planète explore le monde des adultes. Ses rencontres pleines de sagesse et de mystère éveillent notre imagination…</p>
+        </a>
+
+    </div>
+
+    <div>
+        <a href="gallery.html" class="gallery">
+            <p>Gallerie photos</p>
+        </a>
+    </div>
+
+</body>
+</html>
